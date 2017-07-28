@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import WebDevPanel from "./components/WebDev";
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      <p>Test Aff</p>
+      <div className="Container">
+        <WebDevPanel />
       </div>
     );
   }

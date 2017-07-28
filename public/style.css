@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.Container {
+  margin: 0;
+  padding: 0;
+  height: 150vh;
+  background:linear-gradient(#000, #0c1317, #19262f, #253947, #324c5f,#3f6077,#4b738e, #5886a6, #6499be, #71acd6,#7ec0ee);
+}
+.WebDevPanel {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 150vh;
+  overflow: hidden;
+}
+.StarBox {
+  width: 100%;
+  height: 150vh;
+}
+@keyframes twinkle {
+  0% {opacity:.1;}
+  50% {opacity: 1;}
+  100% {opacity: .1;}
+}
+.tallstar {
+  height: .5vh;
+  width: .5vh;
+  background: white;
+  border-radius: 50%;
+  z-index: 100;
+}
+.grandestar{
+  height: 1vh;
+  width: 1vh;
+  background: white;
+  border-radius: 50%;
+  z-index: 100;
+}
+.ventistar {
+  height: 1.5vh;
+  width: 1.5vh;
+  background: white;
+  border-radius: 50%;
+  z-index: 100;
+}
+.slow {
+  animation-name: twinkle;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+.medium {
+  animation-name: twinkle;
+  animation-duration: 4.2s;
+  animation-iteration-count: infinite;
+}
+.fast {
+  animation-name: twinkle;
+  animation-duration: 2.3s;
+  animation-iteration-count: infinite;
+}
+/*Moon css */
+.Moon {
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  height: 50vh;
+  width: 50vh;
+  border-radius: 50%;
+  background: #c7cbd0;
+  box-shadow: inset -6.25vh 0px 0 0px #9098a1;
+  overflow: hidden;
+  z-index: 1000;
+  opacity: 2;
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
+}
+.Moon:hover{
+  transform: scale(1.1);
+}
+
+.Moon > li {
+  position: absolute;
+  list-style: none;
+  background: #737277;
+  border-radius: 50%;
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
+}
+.Moon > li:nth-child(1) {
+  left: 6.25vh;
+  top: 18.5vh;
+  width: 12.5vh;
+  height: 12.5vh;
+  box-shadow: inset 1.5vh -.5vh 0 0px #414043;
+}
+.Moon > li:nth-child(2) {
+  left: 37.5vh;
+  top: 12.5vh;
+  width: 6.25vh;
+  height: 6.25vh;
+  box-shadow: inset .75vh -.25vh 0 0px #414043;
+}
+
+.Moon > li:nth-child(3) {
+  left: 25vh;
+  top: 37.5vh;
+  width: 6.25vh;
+  height: 6.25vh;
+  box-shadow: inset .75vh -.25vh 0 0px #414043;
+}
+
+.Moon > li:nth-child(4) {
+  left: 12.5vh;
+  top: 37.5vh;
+  width: 3.125vh;
+  height: 3.125vh;
+  box-shadow: inset .6vh -0.2vh 0 0px #414043;
+}
+
+.Moon > li:nth-child(5) {
+  left: 21.875vh;
+  top: 4.167vh;
+  width: 3.125vh;
+  height: 3.125vh;
+  box-shadow: inset .6vh -0.2vh 0 0px #414043;
+}
+
+.Moon > li:nth-child(6) {
+  left: 28.57vh;
+  top: 40vh;
+  width: 3.125vh;
+  height: 3.125vh;
+  box-shadow: inset .6vh -0.2vh 0 0px #414043;
+}
+
+.Moon > li:nth-child(7) {
+  left: 45.45vh;
+  top: 25vh;
+  width: 3.125vh;
+  height: 3.125vh;
+  box-shadow: inset .6vh -0.2vh 0 0px #414043;
+}
+/*Moon css end*/
+
+/*GrassKnoll css start*/
+.GrassKnoll {
+  width: 100%;
+  height: 50vh;
+  border-radius: 60% 60% 0% 0%;
+  background-color:	rgb(79,141,94);
+  top: 450vh;
+  position: absolute;
+  opacity: 2;
+  overflow-x: hidden;
+}
+.tree {
+  top: 5vh;
+  left: 10vh;
+  background-color: transparent;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+.trunk {
+  border-radius: 10%;
+  height: 3vh;
+  width:2vh;
+  background-color: brown;
+}
+/*GrassKnoll css end*/
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  top: 20vh;
+  left: 40vw;
+}
+
+.workTitle {
+  color: white;
+  font-size: 10vh;
+  z-index: 99999;
+  border-right: 1vh solid white;
+  white-space: nowrap;
+  animation: 1s blink step-end infinite;
+}
+.FooterFormat {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+}
+.Footer{
+  display:flex;
+  position: absolute;
+  bottom: 0;
+  width: 50vw;
+  justify-content:space-between;
+}
+.Footer > div {
+  display: flex;
+  width: 10vh;
+  height: 5vh;
+  justify-content: center;
+  text-align: center;
+}
+.Cursor {
+  color: white;
+  font-size: 20vh;
+  font-weight: 100;
+  animation: 1s blink step-end infinite;
+  margin:0;
+}
+@keyframes blink {
+  from, to {border-color: transparent;}
+  50% {border-color: white;}
+}
+.ProjectsFormat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  bottom: 10vh;
+  width: 100%;
+  position: absolute;
+}
+.Projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 2;
+}
+.projectRow {
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  width: 20vw;
+  background: white;
+  border-radius: 10px;
+}
+.ProjectTitle {
+  color: white;
+}
