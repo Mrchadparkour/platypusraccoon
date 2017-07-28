@@ -146,34 +146,6 @@ body, html {
   height: 3.125vh;
   box-shadow: inset .6vh -0.2vh 0 0px #414043;
 }
-/*Moon css end*/
-
-/*GrassKnoll css start*/
-.GrassKnoll {
-  width: 100%;
-  height: 50vh;
-  border-radius: 60% 60% 0% 0%;
-  background-color:	rgb(79,141,94);
-  top: 450vh;
-  position: absolute;
-  opacity: 2;
-  overflow-x: hidden;
-}
-.tree {
-  top: 5vh;
-  left: 10vh;
-  background-color: transparent;
-  position: absolute;
-  height: 100px;
-  width: 100px;
-}
-.trunk {
-  border-radius: 10%;
-  height: 3vh;
-  width:2vh;
-  background-color: brown;
-}
-/*GrassKnoll css end*/
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -214,13 +186,6 @@ body, html {
   height: 5vh;
   justify-content: center;
   text-align: center;
-}
-.Cursor {
-  color: white;
-  font-size: 20vh;
-  font-weight: 100;
-  animation: 1s blink step-end infinite;
-  margin:0;
 }
 @keyframes blink {
   from, to {border-color: transparent;}
