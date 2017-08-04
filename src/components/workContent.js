@@ -9,7 +9,7 @@ export default class WorkContent extends React.Component {
   }
 
 author(num) {
-  const arr = ['Hello.', 'I\'m Chadwick.', 'And I love to code.', 'Let\'s Work Together!'];
+  const arr = ['I love to code.',"I love Parkour too.", "If you wanna see...", "Click the Insta Icon! :)", "But if you wanna code,", 'Shoot me a message!',"Let's work Together!"];
   setTimeout(() => {
     if (this.state.hello.length < 1) {
       this.typewriter(0, arr[num], false);
@@ -43,7 +43,8 @@ componentDidMount() {
   render() {
     return(
         <div className="wrapper">
-            <h1 id="workTitle" className="workTitle">{this.state.hello}</h1>
+            <h1 className="workTitle">I'm Chadwick Platt-Kuhn.</h1>
+            <h1 id="workTitle" className="workTitle blink">{this.state.hello}</h1>
         </div>
     );
   }
